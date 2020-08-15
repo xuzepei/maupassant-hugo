@@ -22,7 +22,7 @@
             </h1>
         </header>
         <date class="post-meta meta-date">
-            {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
+            {{ .Date.Year }}-{{ printf "%02d" .Date.Month }}-{{ printf "%02d" .Date.Day }}
         </date>
         {{ with .Params.Categories }}
         <div class="post-meta meta-category">
